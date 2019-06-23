@@ -42,11 +42,7 @@ def input_students
   while !name.empty? do
     # add the student hash to the array
     @students << {name: name, cohort: :november}
-    if @students.count == 1
-      puts "Now we have 1 student"
-    else
-      puts "Now we have #{@students.count} students"
-    end
+    puts "Now we have #{@students.count} students"
     # get another name from the user
     name = gets.chomp
   end
@@ -70,4 +66,3 @@ end
 
 
 interactive_menu
-
